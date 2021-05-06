@@ -298,6 +298,7 @@ class Communes(list):
                 commune.codedepartement = commune_parente.codedepartement
                 commune.coderegion = commune_parente.coderegion
 
+
 def test_communes():
     communes_francaises = Communes()
     print(communes_francaises)
@@ -338,6 +339,7 @@ def test_evenements():
     transitions = Evenements()
     transitions_dict = transitions.to_list_anciennne_nouvelle()
     print(transitions_dict['74125'])
+
 
 if __name__ == '__main__':
     test_regions()
