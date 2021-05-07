@@ -491,6 +491,7 @@ def codifier_instrument(orgue):
     code_orgue += codifie_commune(orgue.commune)
     code_orgue += '-'
     code_orgue += codifie_edifice(orgue.edifice_standard, orgue.type_edifice)
+    code_orgue += '1' # TODO gestion de l'indice édifice
     code_orgue += '-'
     code_orgue += codifie_denomination(orgue.designation)
     return code_orgue
