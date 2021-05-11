@@ -73,6 +73,7 @@ communes_tests = [
 ]
 
 edifices_tests = [
+    ('Centre d’Études Supérieures de la Renaissance', ''),
     ("Notre-Dame-des-Fers", "basilique"),
     ("Jean-Paul II", "chapelle"),
     ("Saint-Jean-de-Passy", "chapelle du lycée"),

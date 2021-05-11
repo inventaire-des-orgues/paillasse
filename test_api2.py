@@ -110,7 +110,7 @@ CHOIX_CODE_DEPARTEMENT = (
 
 )
 
-local = True
+local = False
 
 credential = wincred.get_generic_credential('proxy-surf.rte-france.com')
 IDENT = credential.username
