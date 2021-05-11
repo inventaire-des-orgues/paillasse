@@ -23,6 +23,7 @@ logger_codification.addHandler(fhd)
 logger_codification.addHandler(chd)
 
 communes_tests = [
+    "Saint-M'Hervé",
     "Le Crotoy",
     "Saint-Paterne-Racan",
     "Saint-Médard-en-Jalles",
@@ -167,6 +168,8 @@ def codifie_commune(commune):
     commune_modifiee = gen.supprimer_article(commune)
     # On corrige les e dans l'o (car deux caractères au lieu d'un seul):
     commune_modifiee = commune_modifiee.replace('œ', 'oe')
+    # On corrige l'apostrophe (hors articles)
+    commune_modifiee = commune_modifiee.replace("'", "")
     #
     code = commune_modifiee.upper()
     # REGLE : Abréviations, pour les noms de plus de cinq caractères :
